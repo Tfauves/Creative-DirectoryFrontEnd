@@ -63,7 +63,7 @@ const Login = () => {
           letterSpacing: "8px",
         }}
       >
-        Welcome Bark!
+        sign in
       </h1>
       <LoginForm
         query={query}
