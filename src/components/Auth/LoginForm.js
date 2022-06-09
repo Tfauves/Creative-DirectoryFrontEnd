@@ -2,8 +2,7 @@ import React from "react";
 import Form from "../common/Form";
 import Input from "../common/Input";
 import InlineInputContainer from "../common/InlineInputContainer";
-import Button from "react-bootstrap/Button";
-import image from "../../assets/loginSplash.jpg";
+import Button from "../common/Button";
 
 const LoginForm = ({ query, submitting, updateForm, onSubmit }) => {
   const handleChange = (e) => {
@@ -17,7 +16,7 @@ const LoginForm = ({ query, submitting, updateForm, onSubmit }) => {
   return (
     <div
       style={{
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
         backgroundSize: "cover",
         height: "50vh",
         display: "flex",

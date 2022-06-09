@@ -3,8 +3,6 @@ import axios from "axios";
 import { AuthContext } from "../Providers/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import LoginForm from "./LoginForm";
-import loginbackground from "../../assets/loginbackground.jpg";
-import Splash from "../common/Splash";
 
 const Login = () => {
   const [query, setQuery] = useState({
@@ -46,7 +44,7 @@ const Login = () => {
   };
 
   return (
-    <Splash image={loginbackground}>
+    // <Splash image={loginbackground}>
     <div
       style={{
         display: "flex",
@@ -54,10 +52,19 @@ const Login = () => {
         flexDirection: "column",
         alignItems: "center",
         minHeight: "100vh",
-        boxShadow: "inset 0 0 0, 1000px, rgba 0 0 0 .2"
+        boxShadow: "inset 0 0 0, 1000px, rgba 0 0 0 .2",
       }}
     >
-      <h1 style={{ marginTop: "2em", paddingBottom: ".5em", fontFamily: 'Bebas Neue, cursive', letterSpacing: "8px" }}>Welcome Bark!</h1>
+      <h1
+        style={{
+          marginTop: "2em",
+          paddingBottom: ".5em",
+          fontFamily: "Bebas Neue, cursive",
+          letterSpacing: "8px",
+        }}
+      >
+        Welcome Bark!
+      </h1>
       <LoginForm
         query={query}
         updateForm={updateForm}
@@ -65,7 +72,7 @@ const Login = () => {
         submitting={submitting}
       />
     </div>
-    </Splash>
+    // </Splash>
   );
 };
 
