@@ -9,14 +9,14 @@ const NavBar = (props) => {
     <nav
       style={{
         display: "flex",
-        backgroundColor: "#303030",
+        backgroundColor: "#AB0535",
         position: "fixed",
         width: "100%",
         zIndex: 9999,
         top: 0,
         left: 0,
         flexDirection: "row",
-        height: "60px",
+        height: "90px",
       }}
     >
       <div
@@ -27,7 +27,7 @@ const NavBar = (props) => {
         }}
       >
         <NavButton
-          style={{ fontFamily: "specialElite, cursive" }}
+          style={{ fontFamily: "Roboto Mono, monospace" }}
           to="/"
           label="Directory"
         />
@@ -46,15 +46,10 @@ const NavBar = (props) => {
           justifyContent: "flex-end",
         }}
       >
-        {/* <NavButton
-            style={{ fontFamily: "specialElite, cursive" }}
-            to="/"
-            label="home"
-          /> */}
         {auth.token ? (
           <Fragment>
             <NavButton
-              style={{ fontFamily: "specialElite, cursive" }}
+              style={{ fontFamily: "Roboto Mono, monospace" }}
               to="/profile"
               label="profile"
             />
@@ -62,14 +57,19 @@ const NavBar = (props) => {
         ) : (
           <Fragment>
             <NavButton
-              style={{ fontFamily: "specialElite, cursive" }}
+              style={{ fontFamily: "Roboto Mono, monospace" }}
               to="/login"
               label="login"
             />
             <NavButton
-              style={{ fontFamily: "specialElite, cursive" }}
+              style={{ fontFamily: "Roboto Mono, monospace" }}
               to="/register"
-              label="sign up"
+              label="register"
+            />
+            <NavButton
+              style={{ fontFamily: "Roboto Mono, monospace" }}
+              to="/admin"
+              label="admin"
             />
           </Fragment>
         )}
