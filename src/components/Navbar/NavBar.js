@@ -61,11 +61,11 @@ const NavBar = (props) => {
               to="/login"
               label="login"
             />
-            <NavButton
+            {/* <NavButton
               style={{ fontFamily: "Roboto Mono, monospace" }}
               to="/register"
               label="register"
-            />
+            /> */}
             <NavButton
               style={{ fontFamily: "Roboto Mono, monospace" }}
               to="/admin"

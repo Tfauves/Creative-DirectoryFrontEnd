@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 import banner from "../../assets/banner.jpg";
 import landing from "../../assets/landing.jpg";
 import Splash from "../Splash/Splash";
 import Text from "./Text";
+import NavButton from "../Navbar/NavButton";
 
 const Home = () => {
   return (
@@ -70,6 +71,20 @@ const Home = () => {
         </Splash>
       </div>
       <Text />
+      <div style={{ display: "flex", backgroundColor: "#AB0535" }}>
+        <p style={{ fontSize: "1em" }}>
+          It’s free to join the Fall River Creative Directory! If you are
+          someone who works, lives, exhibits, performs, volunteers or
+          contributes in any other way to the arts, culture or the creative
+          economy in the city of Fall River, this directory is for you. This is
+          the list we use to promote on our social media throughout the year.
+        </p>
+        <NavButton
+          style={{ fontFamily: "Roboto Mono, monospace" }}
+          to="/register"
+          label="register"
+        />
+      </div>
     </div>
   );
 };
