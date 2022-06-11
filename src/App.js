@@ -4,6 +4,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { AuthProvider } from "./components/Providers/AuthProvider";
 import AppRouter from "./components/Routers/AppRouter";
+import Footer from "./components/Footer/Footer";
 
 library.add(fas);
 
