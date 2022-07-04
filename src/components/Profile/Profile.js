@@ -61,8 +61,9 @@ const Profile = (props) => {
               }}
             >
               Artist Media
+              {/* todo need to bring in rest of info */}
             </h1>
-            <h2>{owner.media.type}</h2>
+            {/* <h2>{owner.media.type}</h2> */}
           </div>
         </Container>
       </Fragment>
