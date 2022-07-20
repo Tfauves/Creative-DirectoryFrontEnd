@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 import { apiHost } from "../../config";
 import Spinner from "../faCommon/Spinner";
 import { Container } from "@mui/system";
 import { Fragment } from "react";
+import AdvButton from "../common/AdvButton";
 
 const Profile = (props) => {
   const params = useParams();
@@ -30,7 +31,11 @@ const Profile = (props) => {
     _fetchOwner();
   }, []);
 
+  const navigate = useNavigate();
   const displayProfile = () => {
+    const onClick = () => {
+      navigate("/media");
+    };
     return (
       <Fragment>
         <div style={{ marginTop: "3em" }}>
@@ -61,6 +66,7 @@ const Profile = (props) => {
               }}
             >
               Artist Media
+              <AdvButton onClick={onClick}>add media</AdvButton>
               {/* todo need to bring in rest of info */}
             </h1>
             {/* <h2>{owner.media.type}</h2> */}
