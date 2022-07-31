@@ -34,7 +34,7 @@ const Profile = (props) => {
   const navigate = useNavigate();
   const displayProfile = () => {
     const onClick = () => {
-      navigate("/media");
+      navigate("/updatePro");
     };
     return (
       <Fragment>
@@ -66,7 +66,7 @@ const Profile = (props) => {
               }}
             >
               Artist Media
-              <AdvButton onClick={onClick}>add media</AdvButton>
+              <AdvButton onClick={onClick}>update profile</AdvButton>
               {/* todo need to bring in rest of info */}
             </h1>
             {/* <h2>{owner.media.type}</h2> */}

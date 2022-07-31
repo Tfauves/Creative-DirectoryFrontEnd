@@ -6,6 +6,7 @@ import Home from "./../Home/Home";
 import NavBar from "../Navbar/NavBar";
 import Profile from "../Profile/Profile";
 import Artists from "./../Profile/Artists";
+import UpdatedProfile from "../Profile/UpdateProfile";
 
 const AppRouter = () => {
   return (
@@ -19,6 +20,7 @@ const AppRouter = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/profile/:ownId" element={<Profile />} />
           <Route path="/artists" element={<Artists />} />
+          <Route path="/updatePro" element={<UpdatedProfile />} />
         </Routes>
       </div>
     </div>
